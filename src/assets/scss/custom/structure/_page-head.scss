@@ -1,0 +1,53 @@
+// 
+// Page-title
+// 
+
+.page-title-box {
+    padding-bottom: $grid-gutter-width;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    h4 {
+        font-size: 18px!important;
+    }
+
+    .page-title-right{
+        @media (max-width: 575.98px) {
+            display: none;
+        }
+    }
+}
+
+.page-title{
+    font-size: 20px;
+    margin: 0;
+}
+
+
+body[data-topbar="dark"] {
+    .page-title {
+    color: $header-dark-item-color;
+    }
+}
+
+body[data-layout-mode="dark"] {
+    .page-title {
+        color:  $gray-dark-600;
+        }
+
+        &[data-topbar="light"] {
+
+            .noti-icon {
+                .noti-dot{
+                    box-shadow: 0 0 0 3px $header-bg;
+                }
+            }
+            .page-title{
+                color: $header-item-color;
+            }
+        }
+}
+
