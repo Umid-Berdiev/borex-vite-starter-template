@@ -23,5 +23,3 @@ pnpm build
 ```
 pnpm lint
 ```
-
-### Customize configuration
